@@ -76,10 +76,10 @@ class ItaradioSkill(MycroftSkill):
             self.audioservice = AudioService(self.emitter)
 
 						 
-        whatson_discoradio_intent = IntentBuilder("WhatsonDlfIntent").\
+        whatson_Discoradio_intent = IntentBuilder("WhatsonDlfIntent").\
                          require("WhatsonKeyword").\
-                         require("discoradioKeyword").build()
-        self.register_intent(whatson_Discoradio_intent, self.handle_whatson_discoradio_intent)
+                         require("DiscoradioKeyword").build()
+        self.register_intent(whatson_Discoradio_intent, self.handle_whatson_Discoradio_intent)
         whatson_LifeGateRadio_intent = IntentBuilder("WhatsonLifeGateRadioIntent").\
                          require("WhatsonKeyword").\
                          require("LifeGateRadioKeyword").build()
